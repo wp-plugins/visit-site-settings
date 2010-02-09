@@ -6,7 +6,7 @@ Requires at least: 2.0.2
 Tested up to: 2.9
 Stable tag: trunk
 
-This plugin enables the administrative dashboard's "Visit Site" link to open in a new window through personal options.
+This plugin enables the administrative dashboard's "Visit Site" link to open in a new window through added visit site setting in personal options.
 
 == Installation ==
 
