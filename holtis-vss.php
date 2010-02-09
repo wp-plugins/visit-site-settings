@@ -25,6 +25,37 @@ jQuery('#site-heading a').attr('target', '_blank');
 //]]>
 JS;
 }}
+// Add a custom menu holtis support page
+function holtis_plugins_menu() {
+	add_menu_page('Holt Information Systems', 'WordPress Support', 8, basename(__FILE__), 'support_page', WP_PLUGIN_URL . '/visit-site-settings/holtis16.png');
+	add_submenu_page(basename(__FILE__), 'Support', 'www.holtis.com', 8, basename(__FILE__), 'support_page');
+	add_action('admin_menu', 'holtis_plugins_menu');
+}
+function support_page() {
+?>
+<div class="wrap">
+<div class="icon32" id="icon-options-general"><br /></div>
+<h2>WordPress Support</h2>
+<h3>Holt Information Systems - Outsourced IT, Web Design & Development</h3>
+<a href="http://holtis.com/" target="_blank" title="WordPress Support">http://holtis.com</a>
+<p style="width:600px;">Need help with your current installation of WordPress? Holt Information Systems is a leading provider of support for WordPress themes and plugins.</p>
+<h3>Services Include:</h3>
+<ul>
+	<li>Theme/Plugin Installation &amp; Modifications</li>
+	<li>Website Maintenance, Site &amp; Database Backups, Optimization</li>
+	<li>Search Engine Optimization</li>
+	<li>Google Apps Integration</li>
+	<li>Social Media Marketing (FaceBook, Twitter, etc.)</li>
+	<li>WordPress Hosting</li>
+
+</ul>
+<br />
+<a href="http://holtis.com/get-started/" target="_blank" title="WordPress Support by Holt Information Systems"><img src="http://holtis.com/wp-content/uploads/2009/11/getstartedbtn.png" alt="holtis.com" /></a>
+</div>
+<?php
+}
+// Now we set the function up to execute when the admin menu action is called
+add_action('admin_menu', 'holtis_plugins_menu');
 // Now we set the functinon up to execute when the personal_options action is called
 add_action('personal_options', 'holtis_visit_site_setting_check_box');
 // Now we set the function up to execute when the personal_options_update action is called

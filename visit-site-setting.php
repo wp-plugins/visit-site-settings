@@ -3,7 +3,7 @@
 Plugin Name: Visit Site Setting
 Plugin URI: http://holtis.com/visit-site-settings/
 Description: Opens the administrative dashboard's "Visit Site" link in a new window.
-Version: 2.0
+Version: 2.0.1
 Author: Ray Holt (Holt Information Systems)
 Author URI: http://holtis.com/about
 */
