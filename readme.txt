@@ -27,6 +27,9 @@ For one, it's new. Other than that I'm not sure. Contact Matt and say Ray sent y
 
 == Changelog ==
 
+= 2.0.1 =
+* Adds the menu support page for holtis.com.
+
 = 2.0 =
 * Adds the per user option for visit site settings.
 
@@ -36,8 +39,11 @@ For one, it's new. Other than that I'm not sure. Contact Matt and say Ray sent y
 == Upgrade Notice ==
 
 = 2.0 =
+Easily get WordPress support by holtis.com with the added menu support page. Please upgrade now.
+
+= 2.0 =
 This version gives each user the option to set the visit site link to open in a new window. Upgrade today.
 
 == Arbitrary section ==
 
-So simple a prehistoric human being could do it.
+When a new user is registered they are generally taken to the Profile page where they can choose their settings under Personal Options. For currently registered users you must go into your profile and change the visit site setting under Personal Options.
