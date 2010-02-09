@@ -27,11 +27,11 @@ JS;
 }}
 // Add a custom menu holtis support page
 function holtis_plugins_menu() {
-	add_menu_page('WordPress Support', 'WordPress Support', 8, basename(__FILE__), 'support_page', WP_PLUGIN_URL . '/visit-site-settings/holtis16.png');
-	add_submenu_page(basename(__FILE__), 'Holt Information Systems', 'Holt Information Systems', 8, basename(__FILE__), 'support_page');
+	add_menu_page('WordPress Support', 'WordPress Support', 8, basename(__FILE__), 'holtis_support_page', WP_PLUGIN_URL . '/visit-site-settings/holtis16.png');
+	add_submenu_page(basename(__FILE__), 'Holt Information Systems', 'Holt Information Systems', 8, basename(__FILE__), 'holtis_support_page');
 	add_action('admin_menu', 'holtis_plugins_menu');
 }
-function support_page() {
+function holtis_support_page() {
 ?>
 <div class="wrap">
 <div class="icon32" id="icon-options-general"><br /></div>
